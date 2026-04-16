@@ -1,0 +1,758 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gudhi Padwa & Maharashtra Din 2026 – Triveni Mitra Mandal</title>
+<link href="https://fonts.googleapis.com/css2?family=Yatra+One&family=Tiro+Devanagari+Marathi:ital@0;1&family=Cinzel+Decorative:wght@700;900&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --saffron:    #E8610A;
+    --deep-saffron: #C24D00;
+    --gold:       #D4A017;
+    --gold-light: #F0C842;
+    --maroon:     #6B1A1A;
+    --cream:      #FDF6E3;
+    --dark-green: #1A4D2E;
+    --leaf-green: #2E7D32;
+    --ivory:      #FFFBF0;
+    --shadow:     rgba(90,30,0,0.18);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--cream);
+    font-family: 'Cormorant Garamond', serif;
+    color: var(--maroon);
+    overflow-x: hidden;
+  }
+
+  /* ── BACKDROP ── */
+  .page {
+    width: 900px;
+    margin: 0 auto;
+    background: var(--ivory);
+    position: relative;
+    box-shadow: 0 8px 60px rgba(0,0,0,0.25);
+  }
+
+  /* Marigold garland top border */
+  .garland-bar {
+    height: 22px;
+    background: repeating-linear-gradient(
+      90deg,
+      #E8610A 0px, #E8610A 12px,
+      #D4A017 12px, #D4A017 24px,
+      #2E7D32 24px, #2E7D32 36px,
+      #D4A017 36px, #D4A017 48px
+    );
+    opacity: 0.85;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    position: relative;
+    background:
+      radial-gradient(ellipse at 50% 0%, rgba(212,160,23,0.28) 0%, transparent 60%),
+      linear-gradient(160deg, #FFF8E7 0%, #FDECC8 40%, #FCE0A2 100%);
+    padding: 42px 48px 30px;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  /* Rangoli circles */
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      radial-gradient(circle, rgba(232,97,10,0.12) 1px, transparent 1px),
+      radial-gradient(circle, rgba(212,160,23,0.10) 1px, transparent 1px);
+    background-size: 30px 30px, 15px 15px;
+    background-position: 0 0, 7px 7px;
+  }
+
+  .org-line {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1rem;
+    letter-spacing: 0.18em;
+    color: var(--dark-green);
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+
+  .hero-title-block { position: relative; margin-bottom: 6px; }
+
+  .celebrate-text {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 1.05rem;
+    letter-spacing: 0.3em;
+    color: var(--deep-saffron);
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+
+  .main-title {
+    font-family: 'Yatra One', cursive;
+    font-size: 3.8rem;
+    line-height: 1.08;
+    color: var(--dark-green);
+    text-shadow: 2px 3px 0 rgba(212,160,23,0.35), 0 0 40px rgba(212,160,23,0.15);
+    letter-spacing: 0.04em;
+  }
+
+  .title-amp {
+    color: var(--saffron);
+    font-size: 2.6rem;
+    display: block;
+    line-height: 1;
+  }
+
+  .subtitle-marathi {
+    font-family: 'Tiro Devanagari Marathi', serif;
+    font-size: 1.4rem;
+    color: var(--maroon);
+    margin: 6px 0 14px;
+    letter-spacing: 0.06em;
+  }
+
+  .tagline {
+    font-style: italic;
+    font-size: 1.05rem;
+    color: var(--dark-green);
+    opacity: 0.8;
+    margin-bottom: 20px;
+  }
+
+  /* Decorative divider */
+  .divider {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 14px auto;
+    max-width: 560px;
+  }
+  .divider hr { flex: 1; border: none; border-top: 1.5px solid var(--gold); }
+  .divider span { color: var(--saffron); font-size: 1.4rem; }
+
+  .event-meta-row {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 18px 0 0;
+  }
+  .meta-block { text-align: center; }
+  .meta-label {
+    font-size: 0.68rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold);
+    display: block;
+    margin-bottom: 2px;
+  }
+  .meta-value {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 1.05rem;
+    color: var(--maroon);
+    line-height: 1.3;
+  }
+  .meta-value small {
+    display: block;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.9rem;
+    color: var(--deep-saffron);
+    letter-spacing: 0.04em;
+    font-style: italic;
+  }
+
+  /* ── SHOW BANNER ── */
+  .show-banner {
+    background: linear-gradient(135deg, var(--dark-green) 0%, #0F3320 100%);
+    padding: 20px 48px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .show-banner::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 10px,
+      rgba(255,255,255,0.02) 10px,
+      rgba(255,255,255,0.02) 20px
+    );
+  }
+  .show-label {
+    font-size: 0.65rem;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: var(--gold-light);
+    opacity: 0.75;
+    display: block;
+    margin-bottom: 4px;
+  }
+  .show-title-en {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 1.5rem;
+    color: var(--gold-light);
+    text-shadow: 0 0 20px rgba(212,160,23,0.5);
+    letter-spacing: 0.08em;
+  }
+  .show-title-mr {
+    font-family: 'Tiro Devanagari Marathi', serif;
+    font-size: 2.1rem;
+    color: #fff;
+    display: block;
+    margin: 2px 0;
+    text-shadow: 0 2px 12px rgba(0,0,0,0.4);
+  }
+  .show-sub {
+    font-size: 0.82rem;
+    color: rgba(255,255,255,0.65);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-top: 4px;
+  }
+  .show-time {
+    display: inline-block;
+    margin-top: 8px;
+    background: var(--saffron);
+    color: #fff;
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 0.75rem;
+    padding: 4px 18px;
+    border-radius: 30px;
+    letter-spacing: 0.12em;
+  }
+
+  /* ── BODY ── */
+  .body-grid {
+    display: grid;
+    grid-template-columns: 220px 1fr 300px;
+    gap: 0;
+    background: var(--ivory);
+  }
+
+  .col {
+    padding: 28px 20px;
+    border-right: 1px solid rgba(212,160,23,0.25);
+  }
+  .col:last-child { border-right: none; }
+
+  .col-title {
+    font-family: 'Yatra One', cursive;
+    font-size: 1.0rem;
+    color: var(--saffron);
+    border-bottom: 2px solid var(--gold);
+    padding-bottom: 6px;
+    margin-bottom: 14px;
+    text-align: center;
+    letter-spacing: 0.04em;
+  }
+
+  /* Program list */
+  .schedule-list {
+    list-style: none;
+    text-align: center;
+  }
+  .schedule-list li {
+    padding: 8px 0;
+    border-bottom: 1px dotted rgba(212,160,23,0.3);
+    font-size: 0.9rem;
+    color: var(--maroon);
+    letter-spacing: 0.03em;
+  }
+  .schedule-list li:last-child { border-bottom: none; }
+  .schedule-list .item-time {
+    display: block;
+    font-size: 0.68rem;
+    color: var(--gold);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    margin-bottom: 1px;
+  }
+  .schedule-list .item-name {
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+
+  /* Center column */
+  .col-center {
+    padding: 28px 28px;
+    text-align: center;
+  }
+
+  .production-block { margin-bottom: 20px; }
+  .prod-label {
+    font-size: 0.62rem;
+    letter-spacing: 0.26em;
+    text-transform: uppercase;
+    color: var(--gold);
+    display: block;
+    margin-bottom: 2px;
+  }
+  .prod-value {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--maroon);
+  }
+
+  .drama-title-center {
+    font-family: 'Yatra One', cursive;
+    font-size: 1.55rem;
+    color: var(--dark-green);
+    margin: 10px 0 4px;
+    line-height: 1.2;
+  }
+  .drama-title-mr-center {
+    font-family: 'Tiro Devanagari Marathi', serif;
+    font-size: 1.6rem;
+    color: var(--saffron);
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  /* Gudhi graphic placeholder */
+  .gudhi-art {
+    width: 90px;
+    height: 120px;
+    margin: 14px auto 14px;
+    position: relative;
+  }
+  /* Stick */
+  .gudhi-art::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 6px;
+    height: 100px;
+    background: linear-gradient(to bottom, #8B5E3C, #5C3317);
+    border-radius: 3px;
+  }
+  /* Pot */
+  .gudhi-art::after {
+    content: '🪔';
+    font-size: 2.8rem;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* Name grid */
+  .name-section { margin-bottom: 16px; }
+  .name-section-title {
+    font-family: 'Yatra One', cursive;
+    font-size: 0.8rem;
+    color: var(--saffron);
+    letter-spacing: 0.06em;
+    background: linear-gradient(90deg, transparent, rgba(232,97,10,0.08), transparent);
+    padding: 3px 0;
+    margin-bottom: 6px;
+    text-align: center;
+  }
+  .name-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 8px;
+    justify-content: center;
+  }
+  .name-chip {
+    font-size: 0.76rem;
+    color: var(--maroon);
+    padding: 1px 6px;
+    border-radius: 3px;
+    background: rgba(212,160,23,0.08);
+    border: 1px solid rgba(212,160,23,0.15);
+    line-height: 1.6;
+  }
+
+  /* Committee cols */
+  .committee-name {
+    font-size: 0.82rem;
+    text-align: center;
+    padding: 3px 0;
+    color: var(--maroon);
+    border-bottom: 1px dotted rgba(212,160,23,0.2);
+  }
+  .committee-name:last-child { border-bottom: none; }
+
+  /* ── FOOTER ── */
+  .footer {
+    background: linear-gradient(135deg, var(--maroon) 0%, #3D0A0A 100%);
+    padding: 16px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .footer-quote {
+    font-family: 'Tiro Devanagari Marathi', serif;
+    font-size: 1.1rem;
+    color: var(--gold-light);
+    letter-spacing: 0.04em;
+    flex: 1;
+  }
+  .footer-quote small {
+    display: block;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.78rem;
+    color: rgba(255,255,255,0.55);
+    font-style: italic;
+    margin-top: 2px;
+    letter-spacing: 0.08em;
+  }
+  .footer-org {
+    text-align: right;
+  }
+  .footer-org-name {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 0.72rem;
+    color: var(--gold-light);
+    letter-spacing: 0.1em;
+  }
+  .footer-presented {
+    font-size: 0.65rem;
+    color: rgba(255,255,255,0.4);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 2px;
+  }
+
+  .bottom-garland {
+    height: 22px;
+    background: repeating-linear-gradient(
+      90deg,
+      #2E7D32 0px, #2E7D32 12px,
+      #D4A017 12px, #D4A017 24px,
+      #E8610A 24px, #E8610A 36px,
+      #D4A017 36px, #D4A017 48px
+    );
+    opacity: 0.85;
+  }
+
+  /* Corner motifs */
+  .corner-motif {
+    position: absolute;
+    font-size: 2.2rem;
+    opacity: 0.22;
+    line-height: 1;
+  }
+  .corner-tl { top: 10px; left: 10px; }
+  .corner-tr { top: 10px; right: 10px; }
+  .corner-bl { bottom: 10px; left: 10px; }
+  .corner-br { bottom: 10px; right: 10px; }
+
+  /* Lotus border motifs on hero */
+  .lotus-row {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    font-size: 1.3rem;
+    opacity: 0.35;
+    margin: 10px 0 4px;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- TOP GARLAND -->
+  <div class="garland-bar"></div>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="corner-motif corner-tl">🪷</div>
+    <div class="corner-motif corner-tr">🪷</div>
+    <div class="corner-motif corner-bl">🌼</div>
+    <div class="corner-motif corner-br">🌼</div>
+
+    <p class="org-line">Triveni Mitra Mandal &nbsp;·&nbsp; Presents</p>
+
+    <p class="celebrate-text">Celebrate</p>
+    <div class="hero-title-block">
+      <h1 class="main-title">
+        Gudhi Padwa
+        <span class="title-amp">&amp;</span>
+        Maharashtra Din
+      </h1>
+    </div>
+    <p class="subtitle-marathi">नव्या आशेने, नव्या उमेदीने… गुढीपाडव्याच्या हार्दिक शुभेच्छा</p>
+    <p class="tagline">A Joyful Cultural Celebration</p>
+
+    <div class="divider">
+      <hr><span>✦</span><hr>
+    </div>
+
+    <div class="event-meta-row">
+      <div class="meta-block">
+        <span class="meta-label">Date</span>
+        <div class="meta-value">Saturday<br><small>18th April 2026</small></div>
+      </div>
+      <div class="meta-block">
+        <span class="meta-label">Time</span>
+        <div class="meta-value">11:30 AM<br><small>to 5:00 PM</small></div>
+      </div>
+      <div class="meta-block">
+        <span class="meta-label">Venue</span>
+        <div class="meta-value" style="font-size:0.88rem;">Kettering Middle School<br><small>3000 Glengarry Dr, Kettering, OH 45420</small></div>
+      </div>
+    </div>
+
+    <div class="lotus-row">🌸 🌸 🌸 🌸 🌸 🌸 🌸</div>
+  </div>
+
+  <!-- SHOW BANNER -->
+  <div class="show-banner">
+    <span class="show-label">Special Cultural Show</span>
+    <span class="show-title-mr">घेतलं शिंगावर</span>
+    <div class="show-title-en">Marathi Drama</div>
+    <div class="show-time">Curtain Rises · 2:00 PM</div>
+  </div>
+
+  <!-- THREE-COLUMN BODY -->
+  <div class="body-grid">
+
+    <!-- LEFT: Program Schedule -->
+    <div class="col">
+      <div class="col-title">Programme</div>
+      <ul class="schedule-list">
+        <li>
+          <span class="item-time">11:30 AM</span>
+          <span class="item-name">Registration</span>
+        </li>
+        <li>
+          <span class="item-time">12:00 PM</span>
+          <span class="item-name">Lunch</span>
+        </li>
+        <li>
+          <span class="item-time">1:30 PM</span>
+          <span class="item-name">Pre-Show</span>
+        </li>
+        <li>
+          <span class="item-time">1:35 PM</span>
+          <span class="item-name">Asha Video</span>
+        </li>
+        <li>
+          <span class="item-time">1:36 PM</span>
+          <span class="item-name">Dindi Video</span>
+        </li>
+        <li>
+          <span class="item-time">1:38 PM</span>
+          <span class="item-name">Home Minister Skit<br><em style="font-size:0.78rem;color:var(--gold)">Dhol-Tasha Performance</em></span>
+        </li>
+        <li>
+          <span class="item-time">1:40 PM</span>
+          <span class="item-name">Pooja &amp; TMM<br><em style="font-size:0.78rem;color:var(--gold)">Upcoming Programs</em></span>
+        </li>
+        <li>
+          <span class="item-time">1:45 PM</span>
+          <span class="item-name">Address by Guest</span>
+        </li>
+        <li>
+          <span class="item-time">1:50 PM</span>
+          <span class="item-name">महाराष्ट्र गीत</span>
+        </li>
+        <li>
+          <span class="item-time">2:00 PM</span>
+          <span class="item-name">Marathi Drama<br><em style="font-size:0.82rem;color:var(--saffron)">घेतलं शिंगावर</em></span>
+        </li>
+        <li>
+          <span class="item-time">5:30 PM</span>
+          <span class="item-name">Closing<br><em style="font-size:0.78rem;color:var(--gold)">After Programme</em></span>
+        </li>
+      </ul>
+
+      <div style="margin-top:24px;">
+        <div class="col-title">2026 Committee</div>
+        <div class="committee-name">Geeta Tadwalkar</div>
+        <div class="committee-name">Hema Kamat</div>
+        <div class="committee-name">Rohit Deshpande</div>
+        <div class="committee-name">Abhijit Ainapure</div>
+        <div class="committee-name">Aniruddha Gadre</div>
+        <div class="committee-name">Amol Karajagi</div>
+        <div class="committee-name">Hrishikesh Deshpande</div>
+        <div class="committee-name">Ambrish Patil</div>
+      </div>
+
+      <div style="margin-top:20px;">
+        <div class="col-title">Advisory Committee</div>
+        <div class="committee-name">Mrunal Upadhye</div>
+        <div class="committee-name">Neeraj Ghule</div>
+        <div class="committee-name">Asawari Deshmukh</div>
+        <div class="committee-name">Rajesh Bund</div>
+        <div class="committee-name">Sudheendra Galgali</div>
+        <div class="committee-name">Niteen Bapat</div>
+      </div>
+    </div>
+
+    <!-- CENTER: Drama Details -->
+    <div class="col-center">
+
+      <div class="production-block">
+        <span class="prod-label">Presented by</span>
+        <div class="prod-value" style="font-family:'Yatra One',cursive;font-size:1.25rem;color:var(--dark-green);">KalaSanman</div>
+      </div>
+
+      <div class="divider"><hr><span>✦</span><hr></div>
+
+      <div style="text-align:center;margin:8px 0;">
+        <span style="font-size:0.62rem;letter-spacing:0.26em;text-transform:uppercase;color:var(--gold);">Special Marathi Drama</span>
+        <div class="drama-title-mr-center">घेतलं शिंगावर</div>
+        <div class="drama-title-center">Ghetaln Shingavar</div>
+      </div>
+
+      <div class="divider"><hr><span>✦</span><hr></div>
+
+      <!-- Cast: प्रवेशानुसार पात्रपरिचय -->
+      <div style="margin-bottom:14px;">
+        <div class="col-title" style="font-size:0.85rem;margin-bottom:10px;">प्रवेशानुसार पात्रपरिचय</div>
+        <table style="width:100%;border-collapse:collapse;font-size:0.82rem;">
+          <tbody>
+            <tr><td style="padding:3px 6px;color:var(--saffron);font-weight:600;font-family:'Tiro Devanagari Marathi',serif;">सविता</td><td style="padding:3px 6px;color:var(--maroon);">शिल्पा लोणी</td></tr>
+            <tr style="background:rgba(212,160,23,0.05);"><td style="padding:3px 6px;color:var(--saffron);font-weight:600;font-family:'Tiro Devanagari Marathi',serif;">सदानंद</td><td style="padding:3px 6px;color:var(--maroon);">शितल रामचंद्रे</td></tr>
+            <tr><td style="padding:3px 6px;color:var(--saffron);font-weight:600;font-family:'Tiro Devanagari Marathi',serif;">सज्जन</td><td style="padding:3px 6px;color:var(--maroon);">अभिजित भावे</td></tr>
+            <tr style="background:rgba(212,160,23,0.05);"><td style="padding:3px 6px;color:var(--saffron);font-weight:600;font-family:'Tiro Devanagari Marathi',serif;">मुलगा</td><td style="padding:3px 6px;color:var(--maroon);">तेजस येवलेकर</td></tr>
+            <tr><td style="padding:3px 6px;color:var(--saffron);font-weight:600;font-family:'Tiro Devanagari Marathi',serif;">मधू</td><td style="padding:3px 6px;color:var(--maroon);">अपर्णा काकिर्दे</td></tr>
+            <tr style="background:rgba(212,160,23,0.05);"><td style="padding:3px 6px;color:var(--saffron);font-weight:600;font-family:'Tiro Devanagari Marathi',serif;">म्हातारा</td><td style="padding:3px 6px;color:var(--maroon);">रोहित येवलेकर</td></tr>
+            <tr><td style="padding:3px 6px;color:var(--saffron);font-weight:600;font-family:'Tiro Devanagari Marathi',serif;">बॉस</td><td style="padding:3px 6px;color:var(--maroon);">महेश मालाडकर</td></tr>
+            <tr style="background:rgba(212,160,23,0.05);"><td style="padding:3px 6px;color:var(--saffron);font-weight:600;font-family:'Tiro Devanagari Marathi',serif;">मृदुला</td><td style="padding:3px 6px;color:var(--maroon);">उर्मिला बापट</td></tr>
+            <tr><td style="padding:3px 6px;color:var(--saffron);font-weight:600;font-family:'Tiro Devanagari Marathi',serif;">वाकणकर</td><td style="padding:3px 6px;color:var(--maroon);">पराग कानविंदे</td></tr>
+            <tr style="background:rgba(212,160,23,0.05);"><td style="padding:3px 6px;color:var(--saffron);font-weight:600;font-family:'Tiro Devanagari Marathi',serif;">इन्स्पेक्टर</td><td style="padding:3px 6px;color:var(--maroon);">राज लोणी</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Story Synopsis -->
+      <div style="background:linear-gradient(135deg,rgba(232,97,10,0.06),rgba(212,160,23,0.08));border:1px solid rgba(212,160,23,0.3);border-radius:5px;padding:10px 14px;margin-bottom:14px;font-family:'Tiro Devanagari Marathi',serif;font-size:0.78rem;color:var(--maroon);line-height:1.85;text-align:justify;">
+        <span style="display:block;font-size:0.60rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:6px;font-family:'Cormorant Garamond',serif;text-align:center;">नाटकाविषयी</span>
+        अहो….. हे नाटक आहे तरी काय? …… प्रेयसी आहे, आणाभाका घेऊन झाल्यात, शिक्षण आहे, नोकरी आहे…….पण राहायला घरच नाही….! मग या <em>"एक अकेला इस शहर में …. "</em> सज्जन खरेने एक नामी शक्कल लढवली <em>"आबोदाना/आशियाना धुंडायची"</em>…..! पण…… थोडी पंचाईत झाली हो ….प्रेयसी घर बघायला प्रथमच येणार …. नेमकी तेंव्हाच ही एक सविता नावाची वेगळीच समस्या अंगावर धावून आली …… मग काय ?...... घेतलं शिंगावर ……. चला तर मग या बघायला, आपल्या स्थानिक प्रथतयश कलासन्मानची ही १८वी निर्मिती ….त्रिवेणी मित्र मंडळ सहर्ष सादर करीत आहे……धम्माल विनोदी फार्स …..कलासन्मान, ग्रेटर सनसनाटी निर्मित……मनोहर काटदरे लिखित …..
+      </div>
+
+      <div class="divider"><hr><span>✦</span><hr></div>
+
+      <!-- Production credits in Marathi -->
+      <div style="margin-bottom:14px;">
+        <div class="col-title" style="font-size:0.85rem;margin-bottom:10px;">निर्मिती</div>
+        <table style="width:100%;border-collapse:collapse;font-size:0.82rem;font-family:'Tiro Devanagari Marathi',serif;">
+          <tbody>
+            <tr><td style="padding:3px 6px;color:var(--dark-green);font-weight:600;">लेखक</td><td style="padding:3px 6px;color:var(--maroon);">मनोहर काटदरे</td></tr>
+            <tr style="background:rgba(212,160,23,0.05);"><td style="padding:3px 6px;color:var(--dark-green);font-weight:600;">दिग्दर्शक</td><td style="padding:3px 6px;color:var(--maroon);">पराग कानविंदे</td></tr>
+            <tr><td style="padding:3px 6px;color:var(--dark-green);font-weight:600;">निर्मितीप्रमुख</td><td style="padding:3px 6px;color:var(--maroon);">राज लोणी</td></tr>
+            <tr style="background:rgba(212,160,23,0.05);"><td style="padding:3px 6px;color:var(--dark-green);font-weight:600;">रंगमंच व्यवस्था</td><td style="padding:3px 6px;color:var(--maroon);">आदिती दातार</td></tr>
+            <tr><td style="padding:3px 6px;color:var(--dark-green);font-weight:600;">नेपथ्य</td><td style="padding:3px 6px;color:var(--maroon);">नेहा शेट्टीगर</td></tr>
+            <tr style="background:rgba(212,160,23,0.05);"><td style="padding:3px 6px;color:var(--dark-green);font-weight:600;">ध्वनियोजना</td><td style="padding:3px 6px;color:var(--maroon);">महेश मालाडकर</td></tr>
+            <tr><td style="padding:3px 6px;color:var(--dark-green);font-weight:600;">वेषभूषा</td><td style="padding:3px 6px;color:var(--maroon);">पल्लवी कुलकर्णी</td></tr>
+            <tr style="background:rgba(212,160,23,0.05);"><td style="padding:3px 6px;color:var(--dark-green);font-weight:600;">रंगभूषा</td><td style="padding:3px 6px;color:var(--maroon);">रुपाली महाडेश्वर</td></tr>
+            <tr><td style="padding:3px 6px;color:var(--dark-green);font-weight:600;">प्रसिद्धी</td><td style="padding:3px 6px;color:var(--maroon);">गिरीश देशपांडे, पराग कानविंदे</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div style="background:rgba(212,160,23,0.08);border:1px solid rgba(212,160,23,0.25);border-radius:4px;padding:8px 10px;font-size:0.78rem;font-family:'Tiro Devanagari Marathi',serif;color:var(--maroon);line-height:1.6;margin-bottom:14px;">
+        <span style="display:block;font-size:0.62rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:4px;font-family:'Cormorant Garamond',serif;">विशेष सहाय्य</span>
+        संतोष दलाल, देवश्री फडके आणि त्रिवेणी मित्र मंडळतर्फे गीता तडवलकर, हेमा कामत, रोहित देशपांडे, अनिरुद्ध गद्रे
+      </div>
+
+      <div class="divider"><hr><span>✦</span><hr></div>
+
+    </div>
+
+    <!-- RIGHT: More cast + advisory -->
+    <div class="col" style="border-right:none;">
+      <div class="col-title">More Cast</div>
+
+      <div class="name-section">
+        <div class="name-section-title" style="font-family:'Tiro Devanagari Marathi',serif;font-size:0.88rem;">महाराष्ट्र गौरव गीत</div>
+        <table style="width:100%;border-collapse:collapse;font-size:0.78rem;margin-bottom:6px;">
+          <tbody>
+            <tr><td style="padding:2px 6px;color:var(--dark-green);font-weight:600;font-family:'Tiro Devanagari Marathi',serif;white-space:nowrap;">गीतकार</td><td style="padding:2px 6px;color:var(--maroon);font-family:'Tiro Devanagari Marathi',serif;">अनिरुद्ध गद्रे</td></tr>
+            <tr style="background:rgba(212,160,23,0.05);"><td style="padding:2px 6px;color:var(--dark-green);font-weight:600;font-family:'Tiro Devanagari Marathi',serif;white-space:nowrap;">संगीतकार</td><td style="padding:2px 6px;color:var(--maroon);font-family:'Tiro Devanagari Marathi',serif;">अनिरुद्ध गद्रे</td></tr>
+            <tr><td style="padding:2px 6px;color:var(--dark-green);font-weight:600;font-family:'Tiro Devanagari Marathi',serif;white-space:nowrap;">संगीत संयोजक</td><td style="padding:2px 6px;color:var(--maroon);font-family:'Tiro Devanagari Marathi',serif;">मंदार चाटी</td></tr>
+          </tbody>
+        </table>
+        <div style="font-size:0.68rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);text-align:center;margin:4px 0 5px;font-family:'Cormorant Garamond',serif;">गायक</div>
+        <div class="name-grid">
+          <span class="name-chip" style="font-family:'Tiro Devanagari Marathi',serif;">अपर्णा गाडगीळ</span>
+          <span class="name-chip" style="font-family:'Tiro Devanagari Marathi',serif;">तृप्ती भावे</span>
+          <span class="name-chip" style="font-family:'Tiro Devanagari Marathi',serif;">प्राजक्ता मोहरीर</span>
+          <span class="name-chip" style="font-family:'Tiro Devanagari Marathi',serif;">कुशल अभ्यंकर</span>
+          <span class="name-chip" style="font-family:'Tiro Devanagari Marathi',serif;">वृंदा लेले</span>
+          <span class="name-chip" style="font-family:'Tiro Devanagari Marathi',serif;">स्वाती चाबुकस्वार</span>
+          <span class="name-chip" style="font-family:'Tiro Devanagari Marathi',serif;">अनिरुद्ध गद्रे</span>
+        </div>
+      </div>
+
+      <!-- Maharashtra Gaurav Geet Lyrics -->
+      <div style="margin-top:16px;background:linear-gradient(160deg,rgba(26,77,46,0.06),rgba(212,160,23,0.06));border:1px solid rgba(212,160,23,0.2);border-radius:5px;padding:10px 12px;">
+        <div style="font-family:'Tiro Devanagari Marathi',serif;font-size:0.75rem;color:var(--maroon);line-height:1.9;text-align:center;">
+          <div style="font-family:'Yatra One',cursive;font-size:0.88rem;color:var(--dark-green);margin-bottom:6px;letter-spacing:0.03em;">महाराष्ट्र गौरव गीत</div>
+          <div style="color:var(--saffron);font-weight:600;margin-bottom:4px;">धन्य हा महाराष्ट्र माझा</div>
+          संत शूरवीरांचा कलाकारांचा<br>
+          परंपरा जपवू ही नवयुग घडविता<br>
+          भक्ती शौर्य त्यागाची हो गाऊया ही गाथा ॥धृ॥
+          <div style="border-top:1px dotted rgba(212,160,23,0.3);margin:6px 0;"></div>
+          संतांच्या वाणीत गुंजे भक्तीचाच भाव<br>
+          ज्ञानोबा तुकाराम घेती विठ्ठलाचे नाव<br>
+          पंढरीत दिंडी येता अखंड जल्लोष<br>
+          चिरंतन प्रेमाचा हा सुंदर संदेश ॥१॥
+          <div style="border-top:1px dotted rgba(212,160,23,0.3);margin:6px 0;"></div>
+          सह्याद्रीच्या गडांवर उंच ध्वज फडकती<br>
+          पराक्रमे शिवराय इतिहास घडविती<br>
+          अटकेपार झेंडा नेती पेशवे बाजीराव<br>
+          शूरवीरांच्या कथांनी गुंजे गाव गाव ॥२॥
+          <div style="border-top:1px dotted rgba(212,160,23,0.3);margin:6px 0;"></div>
+          झाशीच्या राणीने दिला अनोखा संघर्ष<br>
+          शिक्षणात सावित्रीने साधला उत्कर्ष<br>
+          सावरकर टिळक लावी स्वराज्याचा दीप<br>
+          त्याग बलिदानाचे हे अद्वितीय माप ॥३॥
+          <div style="border-top:1px dotted rgba(212,160,23,0.3);margin:6px 0;"></div>
+          सचिनच्या खेळाने मान भारताची उंचावते<br>
+          लताच्या सुरांनी सारे जग कसे मोहरते<br>
+          पुलंचे साहित्य सार्या जगताला हसवी<br>
+          असामान्य कलावंत महाराष्ट्र घडवी ॥४॥
+          <div style="border-top:1px dotted rgba(212,160,23,0.3);margin:6px 0;"></div>
+          <div style="color:var(--saffron);font-weight:600;margin-top:2px;">धन्य हा महाराष्ट्र माझा</div>
+          संत शूरवीरांचा कलाकारांचा<br>
+          परंपरा जपवू ही नवयुग घडविता<br>
+          भक्ती शौर्य त्यागाची हो गाऊया ही गाथा ॥धृ॥
+        </div>
+      </div>
+
+    </div>
+
+  </div><!-- /body-grid -->
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="footer-quote">
+      नव्या आशेने, नव्या उमेदीने, नवीन वर्षाचे दमदार स्वागत …
+      <small>With new hope, new enthusiasm, let's welcome the New Year with strength and spirit …</small>
+    </div>
+    <div class="footer-org">
+  <span class="footer-presented">Organised by</span>
+  <div class="footer-org-name" style="display:flex; align-items:center; gap:8px; justify-content:flex-end;">
+    <img src="tmm-logo.jpeg" alt="TMM Logo" style="height:22px; width:auto;">
+    <span>Triveni Mitra Mandal</span>
+  </div>
+</div>
+  </div>
+
+  <!-- BOTTOM GARLAND -->
+  <div class="bottom-garland"></div>
+
+</div>
+</body>
+</html>
